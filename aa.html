@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTech Solutions</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3;
+            border-radius: 4px;
+        }
+
+        /* Dropdown Menu */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0056b3;
+            padding: 10px 0;
+            min-width: 150px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li ul li a {
+            padding: 8px 15px;
+            color: white;
+        }
+        nav ul li ul li a:hover {
+            background-color: #003f88;
+        }
+
+        /* Show Dropdown on Hover */
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .hero a {
+            padding: 10px 20px;
+            background-color: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 40px;
+            text-align: center;
+        }
+        .features h2 {
+            margin-bottom: 20px;
+        }
+        .features ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+        .features ul li {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .features ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SmartTech Solutions</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Our Features</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">SEO Services</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to SmartTech</h1>
+        <p>We provide innovative tech solutions to enhance your business growth.</p>
+        <a href="#features">Explore Features</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Our Key Features</h2>
+        <ul>
+            <li>Customizable Solutions</li>
+            <li>24/7 Support</li>
+            <li>Scalable Infrastructure</li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        &copy; 2024 SmartTech Solutions. All Rights Reserved. | <a href="#" style="color: white;">Privacy Policy</a>
+    </footer>
+</body>
+</html>
